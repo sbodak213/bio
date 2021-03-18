@@ -1,0 +1,132 @@
+body{
+    background: linear-gradient(#1a2a55 35%, #11499e); 
+}
+
+h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 32pt;
+    color: white;
+}
+
+h3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 19pt;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.logo{
+    display: flex;
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+/* Corner accents */
+
+.diagonalupperleftcorner{
+    position: fixed;
+    top: -22px;
+    left: -22px;
+}
+
+.diagonalupperrightcorner{
+    position: fixed;
+    top: -22px;
+    right: -22px;
+}
+
+.horizontalrightbottomcorner{
+    position: fixed;
+    bottom: -20px;
+    right: -30px;
+}
+
+.horizontalleftbottomcorner{
+    position: fixed;
+    bottom: -20px;
+    left: -30px;
+}
+
+/* Buttons */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 15px;
+    margin-bottom: 65px;
+}
+
+.btn{
+    position: relative;
+    margin: 0 auto;
+    font-family: 'Comfortaa', cursive;
+    font-size: 12pt;
+    color: white;
+    background: linear-gradient(#11499e, #1a2a55 );
+    width: 300px;
+    height: 40px;
+    clip-path: polygon(0 0, 100% 0, 83% 100%, 17% 100%);
+}
+
+.btn::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, rgba(26, 42, 85, 0%), rgba(236, 0, 140, 100%), rgba(26, 42, 85, 0%));
+    left: 0;
+    bottom: 0;
+}
+
+
+/* Resume Button */
+
+.btn-resume::after{
+    transform: scale(0 ,1);
+    transition: transform 0.2s ease-out;
+}
+
+.btn-resume:hover::after{
+    transform: scale(1 ,1);
+}
+
+/* Portfolio Button */
+
+.btn-portfolio::after{
+    transform: scale(0 ,1);
+    transition: transform 0.2s ease-out;
+}
+
+.btn-portfolio:hover::after{
+    transform: scale(1 ,1);
+}
+
+/* LinkedIn Button */
+
+.btn-linkedin::after{
+    transform: scale(0 ,1);
+    transition: transform 0.2s ease-out;
+}
+
+.btn-linkedin:hover::after{
+    transform: scale(1 ,1);
+}
+
+/* Contact Button */
+
+.btn-contact::after{
+    transform: scale(0 ,1);
+    transition: transform 0.2s ease-out;
+}
+
+.btn-contact:hover::after{
+    transform: scale(1 ,1);
+}
